@@ -578,7 +578,7 @@ export default class StickyTree extends React.PureComponent {
 
     renderChildWithChildren(props, state, child, top, indexesToRender) {
         return (
-            <div key={`rv-node-${child.id}`} className="rv-sticky-parent-node"
+            <div id="diego's-test" key={`rv-node-${child.id}`} className="rv-sticky-parent-node"
                  style={this.getChildContainerStyle(child, top)}>
                 {this.renderNode(props, state, child, this.getClientNodeStyle(child))}
                 {this.renderParentContainer(props, state, child, indexesToRender)}
